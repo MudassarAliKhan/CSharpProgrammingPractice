@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CSharpProgrammingPractice
 {
-    public class ArraysInCSHARP
+    public class CSharp4ArraysInCSHARP
     {
         public void main()
         {

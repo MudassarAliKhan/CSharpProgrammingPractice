@@ -1,12 +1,13 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace CSharpProgrammingPractice
 {
     class MainClass
     {
-        static void Main(string[] args)
+        /*static void Main(string[] args)
         {
-            /*Console.WriteLine("--------------------------------------------------------");
+            *//*Console.WriteLine("--------------------------------------------------------");
             Console.WriteLine("Class C# Basics");
             Console.WriteLine("-------------------- Class 1 Math Operations In c#-----------------");
             //Math Operation in C#
@@ -69,7 +70,7 @@ namespace CSharpProgrammingPractice
             class8ForLoop.SimlpeForLoop(15);
             int[] arr = {0};
             class8ForLoop.ForLoopComplex(arr);*/
-            LinkQueryIncSharp linkQueryIncSharp = new LinkQueryIncSharp();
+            /*LinkQueryIncSharp linkQueryIncSharp = new LinkQueryIncSharp();
             linkQueryIncSharp.IlistMethod();
             linkQueryIncSharp.IlistMethod2();
             SataticClassesAndMethod.Add();
@@ -81,8 +82,54 @@ namespace CSharpProgrammingPractice
             ExplicitandImplicitType explicitandImplicitType = new ExplicitandImplicitType();
             explicitandImplicitType.main();
             ArraysInCSHARP arraysInCSHARP = new ArraysInCSHARP();
-            arraysInCSHARP.main();
-        }
+            arraysInCSHARP.main();*//*
+
+            //PolymorphismChild polymorphismChild = new PolymorphismChild();
+            *//*Polymorphism[] polymorphisms = new Polymorphism[4];
+            polymorphisms[0] = new Polymorphism();
+            polymorphisms[1] = new PolymorphismChild();
+
+            foreach (Polymorphism item in polymorphisms)
+            {
+                item.PrintInfo();
+            }*/
+
+            /*MethodOverRidingVsMethodHiding m = new B1();
+            m.M1();
+            MethodOverLoading methodOverLoading = new MethodOverLoading();
+            methodOverLoading.MethodA(2, 3);
+            methodOverLoading.MethodA(2.3f,2.3f,2.5f);
+            DelegatesInCsharp delegatesInCsharp = new DelegatesInCsharp();
+            Delegate programmingPracticeEventHandler = new Delegate(delegatesInCsharp.Hello);
+            programmingPracticeEventHandler("Delegates in CSharp Basic");*//*
+            List<Employee> list = new List<Employee>();
+            list.Add(new Employee(){Id = 1, Name ="Mudassar", PhoneNo =45, Salary=50000});
+            list.Add(new Employee() { Id = 2, Name = "Asad", PhoneNo = 46, Salary = 150000 });
+            list.Add(new Employee() { Id = 3, Name = "Mubashir", PhoneNo = 47, Salary = 160000 });
+            list.Add(new Employee() { Id = 4, Name = "Muzhar", PhoneNo = 48, Salary = 200000 });
+
+           // IsPromotable isPromotable = new IsPromotable(IsPromotableEmployee);
+            
+
+             bool IsPromotableEmployee(Employee emp)
+            {
+                if(emp.Salary>50000)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+
+            Employee employee = new Employee();
+            Employee.EmployeeList(list, emp => emp.Salary>50000);
+
+
+
+
+        }*/
 
     }
 }
